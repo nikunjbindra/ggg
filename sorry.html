@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #8e44ad, #f78fb3); /* Gradient background */
+            font-family: 'Poppins', sans-serif;
+            color: #ff66cc; /* Pink text */
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #fff; /* White text for contrast */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Text shadow */
+            animation: pulse 1.5s infinite; /* Text animation */
+        }
+        img {
+            width: 400px;
+            height: auto;
+            border: 5px solid #ff66cc; /* Pink border for GIF */
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 102, 204, 0.7); /* Pink glow effect */
+            transition: transform 0.3s ease; /* Smooth scaling effect */
+        }
+        img:hover {
+            transform: scale(1.1); /* Scale the GIF on hover */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We're Really Sorry!</h1>
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczdnamtsam1md2J5b2ljMjVnMjZkNmlyejgzbWg0aWlzZHBxb2twbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O6Hw3wYDqzUis/giphy.gif" alt="Sorry GIF">
+    </div>
+</body>
+</html>
